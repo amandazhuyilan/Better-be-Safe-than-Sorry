@@ -56,7 +56,7 @@ main()
 ```
 Compile it with ```gcc -m32 -o stack```. This ```stack``` execuatble will print the current stack pointer that we will use later. Note that the stack pointer address doesn't change frequently, but it might be different if you run ```stack``` many commands away.
 
-4. Modify ```exploit.pl``` to look like the following:
+4. Modify ```exploit.pl``` to look like the following (also avaliable [here](https://github.com/amandazhuyilan/Better-be-Safe-than-Sorry/blob/master/buffer_overflow-exploit.pl)):
 ```
 #!/usr/bin/perl
 
