@@ -7,6 +7,8 @@
 
 3. [Buffer Overflows](#Buffer_Overflows)
 
+4. [Simple Virus](#Simple_Virus)
+
 <a name="Unix_Vulnerabilities"></a>
 #### General Unix Vulnerabilites
 
@@ -75,6 +77,14 @@ Make sure you ```chmod +x exploit.pl``` after you finished modifiying it.
 5. You're almost all good to go! Type in ```buffer_overflow `exploit.pl` ```. It'll be highly likely that you will see ```segmentation fault```, this is where ```$RETURN_ADDRESS=$RETURN_ADDRESS - $ARGV[0];``` in the ```exploit.pl``` will help modify the memory address a bit. Try ```buffer_overflow `exploit.pl -1000` ```, ```buffer_overflow `exploit.pl 1000` ``` etc. (Mine worked at ```buffer_overflow `exploit.pl -2000` ```).
 
 If all the steps are performed in order, and right, a shell should be exploited :D
+
+
+
+<a name="Simple_Virus"></a>
+#### Simple Virus in C
+
+[Tutorial 1](https://jakash3.wordpress.com/2013/10/09/prepending-linux-virus/)
+[Tutorial 2](https://nnc3.com/mags/LJ_1994-2014/LJ/213/11185.html)
 
 
 
